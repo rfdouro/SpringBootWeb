@@ -5,13 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>JSP Page</title>
- </head>
- <body>
-  <h1>Projeto de Exemplo</h1>
- </body>
-</html>
+<%@taglib tagdir="/WEB-INF/tags" prefix="tmp" %>
+<tmp:LAYOUT>
+ <%@include file="comuns/navbar.jsp"%>
+ <h1>Spring Boot App - Exemplo</h1>
+
+
+</tmp:LAYOUT>
